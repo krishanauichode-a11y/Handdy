@@ -15,7 +15,7 @@ ADD https://jdbc.postgresql.org/download/postgresql-42.7.4.jar /usr/local/tomcat
 COPY Handdy.war /usr/local/tomcat/webapps/ROOT.war
 
 # Environment variables for Supabase JDBC
-ENV DB_URL="jdbc:postgresql://aws-1-ap-south-1.pooler.supabase.com:5432/postgres?user=postgres.izelhicxpkvxibgccemv&password=hsN94Z1thZ09vJQd"
+ENV DB_URL="jdbc:postgresql://aws-1-ap-south-1.pooler.supabase.com:5432/postgres?user=postgres.izelhicxpkvxibgccemv&password=hsN94Z1thZ09vJQd&sslmode=require&TimeZone=Asia/Kolkata"
 ENV DB_USER="postgres.izelhicxpkvxibgccemv"
 ENV DB_PASSWORD="hsN94Z1thZ09vJQd"
 
